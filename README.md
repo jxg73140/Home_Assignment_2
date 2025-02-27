@@ -26,9 +26,10 @@ Horizontal Scaling: Distributing the workload by adding more machines.
 
 Example: Deploying training across multiple GPUs or cloud nodes.
 
+
 (b) AWS SageMaker vs. Google Vertex AI vs. Azure ML Studio
 
-AWS SageMaker
+AWS SageMaker:
 
 Fully managed service with integrated Jupyter notebooks.
 
@@ -42,7 +43,8 @@ Provides MLOps capabilities, including Pipelines, AutoML, and monitoring.
 
 Best for: Large-scale enterprise AI applications.
 
-Google Vertex AI
+
+Google Vertex AI:
 
 All-in-one platform combining AutoML and custom ML models.
 
@@ -56,7 +58,8 @@ Features include Vertex Pipelines and AI Explanations.
 
 Best for: AI workflows with a strong focus on automation and data handling.
 
-Azure Machine Learning Studio
+
+Azure Machine Learning Studio:
 
 User-friendly, low-code/no-code ML development environment.
 
@@ -70,7 +73,8 @@ Offers MLOps, CI/CD, and AutoML tools.
 
 Best for: Microsoft ecosystem users (Azure, Power BI, Synapse).
 
-Question 2: CNN Feature Extraction and Convolution Operations
+
+Question 3: CNN Feature Extraction with Filters and Pooling
 
 Task 1: Edge Detection Using Convolution
 
@@ -84,6 +88,7 @@ Apply convolution using cv2.filter2D().
 
 Display both the original and processed images using Matplotlib.
 
+
 Task 2: Max & Average Pooling
 
 Steps:
@@ -96,6 +101,7 @@ Use a 2×2 pool size with stride 2.
 
 Print the original and processed matrices.
 
+
 Task 3: Observations on Convolution Operations
 
 Observation:
@@ -104,11 +110,13 @@ The given code applies a 3×3 kernel to a 5×5 input matrix using TensorFlow’s
 
 The kernel acts as an edge detection filter, highlighting differences in neighboring values.
 
+
 Effect of Stride:
 
 Stride 1: Produces a more detailed feature map.
 
 Stride 2: Reduces output size, retaining fewer details.
+
 
 Effect of Padding:
 
@@ -117,6 +125,7 @@ VALID padding: Crops the edges, reducing output dimensions.
 SAME padding: Maintains dimensions by adding zero-padding around the input.
 
 This experiment demonstrates how different stride and padding values affect the output size and feature extraction in convolutional layers.
+
 
 Question 3: CNN Architectures - Implementation & Comparison
 
@@ -148,11 +157,13 @@ Fully Connected Layers:
 
 Two layers with 4096 neurons each, ReLU activation, and 50% Dropout.
 
+
 Output Layer:
 
 10 neurons using softmax activation for classification.
 
 Executing the script will display the model summary (layer details, output shapes, and parameter counts).
+
 
 Task 2: Implement Residual Block & ResNet
 
@@ -161,6 +172,7 @@ Step 1: Create a Residual Block
 Takes an input tensor and applies two Conv2D layers (64 filters, 3×3, ReLU).
 
 Includes a skip connection that adds the input tensor to the output.
+
 
 Step 2: Build a ResNet-like Model
 
