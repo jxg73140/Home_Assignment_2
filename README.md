@@ -142,6 +142,5 @@ This experiment demonstrates how different stride and padding values affect the 
 2. Implement two residual blocks.
 3. Flatten output and pass it through a Dense layer with 128 neurons.
 4. Final layer uses softmax activation for classification.
-
-**Executing the script will generate the model summary.**
+5. Print the model summary
 
